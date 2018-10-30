@@ -27,6 +27,7 @@ body {
 .shape {
   width: 60px;
   height: 60px;
+  border-radius: 30px;
   background: hsl(150, 60%, 60%);
   display: inline-block;
   margin: 1px;
