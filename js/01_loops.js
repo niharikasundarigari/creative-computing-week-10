@@ -45,8 +45,14 @@ var shapes = document.querySelectorAll('.shape');
 
 //loop over all of the shapes
 shapes.forEach(function(shape, i) {
-// what happens for each element
-var color = hslColor(0, i, 50);
 
-shape.style.backgound = color;
+	var percentage = i / 200 * 100;
+
+// what happens for each element
+var color = hslColor(i + 130 /3, percentage, percentage);
+
+shape.style.background = color;
+
+shape.style.width = i  + 'px';
+shape.style.height = i + 'px';
 });
